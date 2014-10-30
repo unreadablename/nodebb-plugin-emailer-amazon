@@ -2,7 +2,7 @@
     "id": "nodebb-plugin-emailer-amazon",
     "name": "Emailer (Amazon)",
     "description": "Amazon Emailer for NodeBB",
-    "url": "",
+    "url": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon",
     "library": "./index.js",
     "templates": "templates",
     "hooks": [
