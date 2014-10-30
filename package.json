@@ -1,0 +1,20 @@
+{
+  "name": "nodebb-plugin-emailer-amazon",
+  "version": "0.0.1",
+  "description": "An emailer plugin for NodeBB using Amazon SES as a third party service",
+  "main": "index.js",
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "emailer",
+    "amazon"
+  ],
+  "author": {
+    "name": "Oleksandr Pidlisnyi",
+    "email": "oleksandr.pidlisnyi@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-ses": "0.0.3"
+  }
+}
