@@ -9,12 +9,21 @@
     "emailer",
     "amazon"
   ],
-  "author": {
-    "name": "Oleksandr Pidlisnyi",
-    "email": "oleksandr.pidlisnyi@gmail.com"
-  },
+  "author": "Oleksandr Pidlisnyi <oleksandr.pidlisnyi@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "node-ses": "0.0.3"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon/issues"
+  },
+  "homepage": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon"
 }
