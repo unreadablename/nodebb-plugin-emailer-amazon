@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-emailer-amazon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An emailer plugin for NodeBB using Amazon SES as a third party service",
   "main": "index.js",
   "keywords": [

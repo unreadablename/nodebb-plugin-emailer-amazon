@@ -43,7 +43,7 @@ Emailer.send = function(data) {
 		, subject: data.subject
 		, message: data.html
 		, altText: data.plaintext
-	}, function (err, data, res) {
+	}, function (err, result, res) {
 	if (!err) {
 		winston.info('[emailer.amazon] Sent `' + data.template + '` email to uid ' + data.uid);
 	} else {
