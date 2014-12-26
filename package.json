@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-emailer-amazon",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "An emailer plugin for NodeBB using Amazon SES as a third party service",
   "main": "index.js",
   "keywords": [
@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon/issues"
   },
-  "homepage": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon"
+  "homepage": "https://github.com/unreadableusername/nodebb-plugin-emailer-amazon",
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  }
 }

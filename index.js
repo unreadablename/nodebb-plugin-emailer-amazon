@@ -8,7 +8,11 @@ var
 
 	client;
 
-Emailer.init = function(app, middleware, controllers, callback) {
+Emailer.init = function (params, callback) {
+	var router = params.router,
+		middleware = params.middleware,
+		controllers = params.controllers;
+
 	function render(req, res, next) {
 		res.render('admin/plugins/emailer-amazon', {});
 	}
@@ -22,8 +26,8 @@ Emailer.init = function(app, middleware, controllers, callback) {
 		}
 	});
 
-	app.get('/admin/plugins/emailer-amazon', middleware.admin.buildHeader, render);
-	app.get('/api/admin/plugins/emailer-amazon', render);
+	router.get('/admin/plugins/emailer-amazon', middleware.admin.buildHeader, render);
+	router.get('/api/admin/plugins/emailer-amazon', render);
 
 	callback();
 
