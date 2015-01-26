@@ -69,4 +69,15 @@ Emailer.admin = {
 	}
 };
 
+Emailer.getNotices = function(notices, callback) {
+	//console.log(client);
+	notices.push({
+		done: client !== undefined,
+		doneText: 'Emailer (Amazon SES) OK',
+		notDoneText: 'Emailer (Amazon SES) needs setup'
+	});
+
+	callback(null, notices);
+}
+
 module.exports = Emailer;
