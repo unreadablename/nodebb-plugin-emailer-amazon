@@ -34,9 +34,10 @@ Emailer.init = function (params, callback) {
 
 };
 
-Emailer.send = function(data) {
+Emailer.send = function(data, callback) {
 	if (!client) {
-		return winston.error('[emailer.amazon] Amazon SES is not set up properly!')
+		winston.error('[emailer.amazon] Amazon SES is not set up properly!')
+		return callback(null, data);
 	}
 
 	client.sendemail({
@@ -54,6 +55,7 @@ Emailer.send = function(data) {
 		winston.warn('[emailer.amazon] Unable to send `' + data.template + '` email to uid ' + data.uid + '!!');
 		winston.error('[emailer.amazon] (' + err.message + ')');
 	}
+	callback(err, data);
 	});
 };
 
